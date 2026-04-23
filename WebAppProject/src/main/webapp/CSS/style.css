@@ -1,0 +1,297 @@
+@charset "UTF-8";
+
+/* ======== GENERAL BODY ======== */
+body {
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+/*-----------------------------------------------*/
+
+
+/* ======== INDEX PAGE ======== */
+.index-container {
+    text-align: center;
+    margin-top: 120px;
+}
+.button-group {
+    margin-top: 30px;
+}
+.index-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+    padding: 12px 28px;
+    background-color: #2e4d2e;
+    color: #f0e9dd;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+}
+.index-button:hover {
+    background-color: #1f351f;
+}
+.index-button img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+}
+
+
+/*-----------------------------------------------*/
+
+
+/* ======== CONTAINERS & TITLES ======== */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 8px #000;
+}
+
+
+/*-----------------------------------------------*/
+
+
+/* ======== FORMS ======== */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px 30px;
+    width: 380px;
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+.input-group {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.input-group input,
+.input-group textarea,
+.input-group select {
+    width: 100%;
+    padding: 12px 20px 12px 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    color: #fff;
+    box-sizing: border-box;
+    backdrop-filter: blur(4px);
+}
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+    color: #ddd;
+}
+.input-group select option {
+    background-color: #333;
+    color: white;
+}
+
+
+/*-----------------------------------------------*/
+
+
+/* ======== ICONS ======== */
+.input-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 22px;
+    opacity: 0.8;
+    filter: invert(100%);
+}
+
+
+/*-----------------------------------------------*/
+
+
+/* ======== TOGGLE PASSWORD ======== */
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    user-select: none;
+}
+
+
+/*-----------------------------------------------*/
+
+
+/* ======== BUTTONS ======== */
+.login-button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    background-color: #204020;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+.login-button:hover {
+    background-color: #163316;
+}
+
+
+/*-----------------------------------------------*/
+
+
+/* ======== ERROR TEXT ======== */
+.error-message {
+    text-align: center;
+    color: red;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+
+/*-----------------------------------------------*/
+
+
+/* ======== MAIN MENU (GRID) ======== */
+.user-info {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.menu-container {
+    text-align: center;
+    color: white;
+}
+.menu-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px black;
+}
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 25px;
+    padding: 0 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.menu-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(6px);
+}
+.menu-box:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+.menu-box img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    filter: drop-shadow(1px 1px 2px black);
+}
+.menu-box span {
+    font-size: 16px;
+}
+
+
+/*-----------------------------------------------*/
+
+
+/* ======== VERTICAL BUTTONS (e.g. Logout) ======== */
+.button-container-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+.menu-button {
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    background-color: #204020;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    width: 220px;
+    text-align: center;
+}
+.menu-button:hover {
+    background-color: #163316;
+}
+.menu-button.logout {
+    background-color: #7a1f1f;
+}
+.menu-button.logout:hover {
+    background-color: #5e1616;
+}
+
+
+/*-----------------------------------------------*/
+
+	
+/* ======== SUCCESS MESSAGE (BOTTOM) ======== */
+.bottom-success-message {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #e6ffee;
+    color: #006633;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+    transition: opacity 0.6s ease;
+    z-index: 1000;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
