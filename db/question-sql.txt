@@ -1,0 +1,25 @@
+SQL commands
+
+
+A.  
+
+UPDATE users SET upasshash = ? WHERE id IN (SELECT id FROM users WHERE uname = ? and upasshash = ?)
+
+
+B.
+
+SELECT id FROM users WHERE uname = ? and upasshash = ?
+
+
+C. 
+
+SELECT * FROM topics ORDER BY id
+
+INSERT INTO messages VALUES (null, ?, ?, ?, null);
+
+SELECT count(*) FROM messages WHERE topic_id = ? 
+
+
+D. 
+
+INSERT INTO topics VALUES (null, ?, ?);
